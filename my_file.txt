@@ -1,6 +1,7 @@
-try:
+
     # File Creation
     with open("my_file.txt", "w") as file:
+        # Writing initial content to the file
         file.write("Line 1: This is a text file.\n")
         file.write("Line 2: It contains a mix of strings and numbers.\n")
         file.write("Line 3: 12345 is a number in this file.\n")
@@ -14,9 +15,10 @@ try:
 
     # File Appending
     with open("my_file.txt", "a") as file:
-        file.write("Line 4: Appended line 1.\n")  # Append line 1
-        file.write("Line 5: Appended line 2.\n")  # Append line 2
-        file.write("Line 6: Appended line 3.\n")  # Append line 3
+        # Appending additional lines to the file
+        file.write("Line 4: Appended line 1.\n")  
+        file.write("Line 5: Appended line 2.\n")  
+        file.write("Line 6: Appended line 3.\n")  
         print("\nFile 'my_file.txt' appended successfully.")  
 
 except FileNotFoundError:
